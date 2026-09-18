@@ -1,0 +1,2 @@
+observation_id,ward_id,observed_at_utc,local_date,local_time,temperature_c,relative_humidity_pct,wind_speed_kmh,pressure_hpa,uv_index,solar_radiation_wm2,source,source_station_id,quality_flag,interpolation_method,data_version
+OBS_YYYYMMDD_W001_0030,BPL_W001,2026-09-18T00:30:00Z,2026-09-18,06:00,23.0,84.0,5.0,1006.0,0.0,0.0,MET Norway,BHOPAL_CITY,verified,ward_offset_v1,2026.09

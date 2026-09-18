@@ -1,0 +1,2 @@
+forecast_id,ward_id,issued_at_utc,target_date,horizon_days,predicted_utci_c,observed_utci_c,predicted_alert_level,observed_alert_level,absolute_error_c,model_version
+FCST_YYYYMMDD_W001_01,BPL_W001,2026-09-18T00:00:00Z,2026-09-19,1,35.8,,,0.0,xgboost_2026.09

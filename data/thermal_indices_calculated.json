@@ -1,0 +1,4005 @@
+{
+  "thermal_indices": [
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 19.72,
+      "utci": 31.36,
+      "heat_index": 28.75,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 21.22,
+      "utci": 33.51,
+      "heat_index": 31.38,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 21.92,
+      "utci": 34.48,
+      "heat_index": 32.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 20.12,
+      "utci": 31.97,
+      "heat_index": 29.48,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 19.22,
+      "utci": 30.62,
+      "heat_index": 30.86,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 21.72,
+      "utci": 34.18,
+      "heat_index": 32.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 22.22,
+      "utci": 34.9,
+      "heat_index": 33.16,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 20.92,
+      "utci": 32.92,
+      "heat_index": 30.76,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 22.02,
+      "utci": 34.65,
+      "heat_index": 32.79,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-14",
+      "time": "00:30",
+      "wbgt": 21.12,
+      "utci": 33.33,
+      "heat_index": 31.19,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 19.2,
+      "utci": 30.44,
+      "heat_index": 30.54,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 20.72,
+      "utci": 32.61,
+      "heat_index": 30.37,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 21.42,
+      "utci": 33.6,
+      "heat_index": 31.69,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 19.6,
+      "utci": 31.06,
+      "heat_index": 28.38,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 18.7,
+      "utci": 29.69,
+      "heat_index": 29.46,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 21.22,
+      "utci": 33.29,
+      "heat_index": 31.3,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 21.73,
+      "utci": 34.03,
+      "heat_index": 32.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 20.4,
+      "utci": 32.0,
+      "heat_index": 29.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 21.53,
+      "utci": 33.78,
+      "heat_index": 31.89,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-14",
+      "time": "03:30",
+      "wbgt": 20.61,
+      "utci": 32.43,
+      "heat_index": 30.15,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 19.63,
+      "utci": 30.82,
+      "heat_index": 30.91,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 21.18,
+      "utci": 33.05,
+      "heat_index": 31.2,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 21.91,
+      "utci": 34.05,
+      "heat_index": 32.76,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 20.05,
+      "utci": 31.46,
+      "heat_index": 28.82,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 19.12,
+      "utci": 30.06,
+      "heat_index": 29.79,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 21.7,
+      "utci": 33.74,
+      "heat_index": 32.3,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 22.22,
+      "utci": 34.49,
+      "heat_index": 33.43,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 20.85,
+      "utci": 32.42,
+      "heat_index": 30.29,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 22.01,
+      "utci": 34.24,
+      "heat_index": 33.0,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-14",
+      "time": "06:30",
+      "wbgt": 21.07,
+      "utci": 32.86,
+      "heat_index": 30.94,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 21.12,
+      "utci": 33.33,
+      "heat_index": 30.78,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 22.67,
+      "utci": 35.51,
+      "heat_index": 33.86,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 23.38,
+      "utci": 36.49,
+      "heat_index": 35.32,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 21.53,
+      "utci": 33.95,
+      "heat_index": 31.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 20.61,
+      "utci": 32.59,
+      "heat_index": 29.73,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 23.18,
+      "utci": 36.19,
+      "heat_index": 34.91,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 23.69,
+      "utci": 36.92,
+      "heat_index": 35.93,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 22.35,
+      "utci": 34.92,
+      "heat_index": 33.23,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 23.48,
+      "utci": 36.67,
+      "heat_index": 35.49,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-14",
+      "time": "09:30",
+      "wbgt": 22.56,
+      "utci": 35.33,
+      "heat_index": 33.66,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 23.41,
+      "utci": 37.49,
+      "heat_index": 34.73,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 24.86,
+      "utci": 39.5,
+      "heat_index": 37.2,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 25.53,
+      "utci": 40.41,
+      "heat_index": 38.36,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 23.78,
+      "utci": 38.05,
+      "heat_index": 35.35,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 22.93,
+      "utci": 36.79,
+      "heat_index": 33.92,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 25.35,
+      "utci": 40.14,
+      "heat_index": 38.08,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 25.81,
+      "utci": 40.81,
+      "heat_index": 38.83,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 24.63,
+      "utci": 39.01,
+      "heat_index": 37.01,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 25.6,
+      "utci": 40.56,
+      "heat_index": 38.43,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-14",
+      "time": "12:30",
+      "wbgt": 24.77,
+      "utci": 39.35,
+      "heat_index": 37.11,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 24.73,
+      "utci": 39.35,
+      "heat_index": 36.9,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 26.12,
+      "utci": 41.3,
+      "heat_index": 42.52,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 26.76,
+      "utci": 42.17,
+      "heat_index": 43.43,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 25.09,
+      "utci": 39.89,
+      "heat_index": 37.45,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 24.27,
+      "utci": 38.68,
+      "heat_index": 36.13,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 26.6,
+      "utci": 41.92,
+      "heat_index": 43.18,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 27.02,
+      "utci": 42.55,
+      "heat_index": 43.8,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 25.95,
+      "utci": 40.85,
+      "heat_index": 39.18,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 26.81,
+      "utci": 42.3,
+      "heat_index": 43.53,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-14",
+      "time": "15:30",
+      "wbgt": 26.05,
+      "utci": 41.15,
+      "heat_index": 39.14,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 22.72,
+      "utci": 36.29,
+      "heat_index": 33.79,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 24.12,
+      "utci": 38.27,
+      "heat_index": 36.04,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 24.76,
+      "utci": 39.16,
+      "heat_index": 40.99,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 23.08,
+      "utci": 36.84,
+      "heat_index": 34.35,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 22.25,
+      "utci": 35.61,
+      "heat_index": 33.04,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 24.59,
+      "utci": 38.9,
+      "heat_index": 36.85,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 25.03,
+      "utci": 39.54,
+      "heat_index": 41.39,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 23.92,
+      "utci": 37.79,
+      "heat_index": 35.86,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 24.82,
+      "utci": 39.3,
+      "heat_index": 41.11,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "wbgt": 24.04,
+      "utci": 38.12,
+      "heat_index": 35.96,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 20.53,
+      "utci": 32.48,
+      "heat_index": 30.12,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 22.03,
+      "utci": 34.61,
+      "heat_index": 32.81,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 22.74,
+      "utci": 35.58,
+      "heat_index": 34.08,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 20.92,
+      "utci": 33.08,
+      "heat_index": 30.85,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 20.02,
+      "utci": 31.74,
+      "heat_index": 29.21,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 22.54,
+      "utci": 35.28,
+      "heat_index": 33.73,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 23.04,
+      "utci": 35.99,
+      "heat_index": 34.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 21.74,
+      "utci": 34.03,
+      "heat_index": 32.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 22.83,
+      "utci": 35.74,
+      "heat_index": 34.24,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-14",
+      "time": "21:30",
+      "wbgt": 21.93,
+      "utci": 34.43,
+      "heat_index": 32.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 19.42,
+      "utci": 29.96,
+      "heat_index": 29.52,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 20.98,
+      "utci": 32.22,
+      "heat_index": 29.98,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 21.71,
+      "utci": 33.25,
+      "heat_index": 31.73,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 19.84,
+      "utci": 30.6,
+      "heat_index": 30.5,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 18.9,
+      "utci": 29.18,
+      "heat_index": 28.32,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 21.5,
+      "utci": 32.93,
+      "heat_index": 31.19,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 22.03,
+      "utci": 33.7,
+      "heat_index": 32.49,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 20.64,
+      "utci": 31.57,
+      "heat_index": 31.83,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 21.82,
+      "utci": 33.44,
+      "heat_index": 32.03,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-15",
+      "time": "00:30",
+      "wbgt": 20.87,
+      "utci": 32.02,
+      "heat_index": 29.65,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 19.22,
+      "utci": 29.83,
+      "heat_index": 29.41,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 20.77,
+      "utci": 32.08,
+      "heat_index": 29.78,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 21.5,
+      "utci": 33.1,
+      "heat_index": 31.43,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 19.63,
+      "utci": 30.47,
+      "heat_index": 30.38,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 18.71,
+      "utci": 29.06,
+      "heat_index": 28.23,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 21.29,
+      "utci": 32.78,
+      "heat_index": 30.92,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 21.81,
+      "utci": 33.54,
+      "heat_index": 32.15,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 20.44,
+      "utci": 31.43,
+      "heat_index": 31.7,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 21.61,
+      "utci": 33.29,
+      "heat_index": 31.71,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-15",
+      "time": "03:30",
+      "wbgt": 20.66,
+      "utci": 31.88,
+      "heat_index": 29.46,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 19.21,
+      "utci": 30.57,
+      "heat_index": 30.54,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 20.73,
+      "utci": 32.74,
+      "heat_index": 30.37,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 21.43,
+      "utci": 33.73,
+      "heat_index": 31.69,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 19.61,
+      "utci": 31.19,
+      "heat_index": 28.38,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 18.71,
+      "utci": 29.82,
+      "heat_index": 29.46,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 21.23,
+      "utci": 33.42,
+      "heat_index": 31.3,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 21.74,
+      "utci": 34.16,
+      "heat_index": 32.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 20.41,
+      "utci": 32.13,
+      "heat_index": 29.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 21.53,
+      "utci": 33.91,
+      "heat_index": 31.89,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-15",
+      "time": "06:30",
+      "wbgt": 20.62,
+      "utci": 32.56,
+      "heat_index": 30.15,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 23.53,
+      "utci": 37.14,
+      "heat_index": 35.25,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 25.01,
+      "utci": 39.18,
+      "heat_index": 37.83,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 25.68,
+      "utci": 40.1,
+      "heat_index": 39.04,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 23.92,
+      "utci": 37.71,
+      "heat_index": 35.89,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 23.04,
+      "utci": 36.44,
+      "heat_index": 34.39,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 25.5,
+      "utci": 39.83,
+      "heat_index": 38.75,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 25.97,
+      "utci": 40.49,
+      "heat_index": 39.54,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 24.77,
+      "utci": 38.68,
+      "heat_index": 37.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 25.76,
+      "utci": 40.25,
+      "heat_index": 39.11,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-15",
+      "time": "09:30",
+      "wbgt": 24.92,
+      "utci": 39.02,
+      "heat_index": 37.73,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 25.73,
+      "utci": 41.07,
+      "heat_index": 42.03,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 26.98,
+      "utci": 42.9,
+      "heat_index": 43.84,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 27.54,
+      "utci": 43.73,
+      "heat_index": 44.64,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 26.03,
+      "utci": 41.57,
+      "heat_index": 42.51,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 25.3,
+      "utci": 40.44,
+      "heat_index": 41.39,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 27.41,
+      "utci": 43.5,
+      "heat_index": 44.44,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 27.76,
+      "utci": 44.08,
+      "heat_index": 44.96,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 26.91,
+      "utci": 42.53,
+      "heat_index": 43.62,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 27.56,
+      "utci": 43.84,
+      "heat_index": 44.7,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "wbgt": 26.94,
+      "utci": 42.78,
+      "heat_index": 43.76,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 26.27,
+      "utci": 41.87,
+      "heat_index": 42.88,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 27.44,
+      "utci": 43.65,
+      "heat_index": 44.58,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 27.97,
+      "utci": 44.45,
+      "heat_index": 45.33,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 26.55,
+      "utci": 42.35,
+      "heat_index": 43.32,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 25.87,
+      "utci": 41.25,
+      "heat_index": 42.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 27.86,
+      "utci": 44.23,
+      "heat_index": 45.15,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 28.17,
+      "utci": 44.79,
+      "heat_index": 45.62,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 27.44,
+      "utci": 43.31,
+      "heat_index": 44.42,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 27.97,
+      "utci": 44.55,
+      "heat_index": 45.38,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-15",
+      "time": "15:30",
+      "wbgt": 27.42,
+      "utci": 43.53,
+      "heat_index": 44.51,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 23.59,
+      "utci": 37.87,
+      "heat_index": 39.6,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 24.87,
+      "utci": 39.75,
+      "heat_index": 41.55,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 25.46,
+      "utci": 40.6,
+      "heat_index": 42.4,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 23.91,
+      "utci": 38.39,
+      "heat_index": 40.13,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 23.15,
+      "utci": 37.23,
+      "heat_index": 34.59,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 25.32,
+      "utci": 40.35,
+      "heat_index": 42.18,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 25.69,
+      "utci": 40.96,
+      "heat_index": 42.75,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 24.76,
+      "utci": 39.33,
+      "heat_index": 41.23,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 25.49,
+      "utci": 40.72,
+      "heat_index": 42.49,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-15",
+      "time": "18:30",
+      "wbgt": 24.82,
+      "utci": 39.62,
+      "heat_index": 41.44,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 19.92,
+      "utci": 31.5,
+      "heat_index": 28.93,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 21.44,
+      "utci": 33.66,
+      "heat_index": 31.71,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 22.14,
+      "utci": 34.64,
+      "heat_index": 33.02,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 20.32,
+      "utci": 32.11,
+      "heat_index": 29.7,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 19.41,
+      "utci": 30.76,
+      "heat_index": 30.98,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 21.94,
+      "utci": 34.34,
+      "heat_index": 32.65,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 22.45,
+      "utci": 35.06,
+      "heat_index": 33.59,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 21.13,
+      "utci": 33.06,
+      "heat_index": 31.05,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 22.24,
+      "utci": 34.81,
+      "heat_index": 33.2,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-15",
+      "time": "21:30",
+      "wbgt": 21.33,
+      "utci": 33.48,
+      "heat_index": 31.51,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 18.59,
+      "utci": 28.78,
+      "heat_index": 27.77,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 20.14,
+      "utci": 31.05,
+      "heat_index": 31.16,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 20.86,
+      "utci": 32.08,
+      "heat_index": 29.77,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 19.0,
+      "utci": 29.43,
+      "heat_index": 28.78,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 18.08,
+      "utci": 28.0,
+      "heat_index": 26.55,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 20.65,
+      "utci": 31.75,
+      "heat_index": 29.22,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 21.17,
+      "utci": 32.53,
+      "heat_index": 30.52,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 19.8,
+      "utci": 30.39,
+      "heat_index": 30.12,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 20.97,
+      "utci": 32.27,
+      "heat_index": 30.09,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-16",
+      "time": "00:30",
+      "wbgt": 20.02,
+      "utci": 30.85,
+      "heat_index": 30.86,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 17.77,
+      "utci": 27.61,
+      "heat_index": 25.98,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 19.3,
+      "utci": 29.88,
+      "heat_index": 29.46,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 20.02,
+      "utci": 30.9,
+      "heat_index": 30.98,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 18.17,
+      "utci": 28.26,
+      "heat_index": 27.03,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 17.26,
+      "utci": 26.83,
+      "heat_index": 24.73,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 19.81,
+      "utci": 30.58,
+      "heat_index": 30.5,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 20.33,
+      "utci": 31.36,
+      "heat_index": 31.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 18.96,
+      "utci": 29.21,
+      "heat_index": 28.37,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 20.12,
+      "utci": 31.1,
+      "heat_index": 31.28,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-16",
+      "time": "03:30",
+      "wbgt": 19.18,
+      "utci": 29.67,
+      "heat_index": 29.15,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 18.24,
+      "utci": 28.7,
+      "heat_index": 27.6,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 19.77,
+      "utci": 30.93,
+      "heat_index": 30.91,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 20.49,
+      "utci": 31.95,
+      "heat_index": 29.39,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 18.65,
+      "utci": 29.34,
+      "heat_index": 28.59,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 17.74,
+      "utci": 27.93,
+      "heat_index": 26.41,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 20.28,
+      "utci": 31.63,
+      "heat_index": 28.9,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 20.8,
+      "utci": 32.39,
+      "heat_index": 30.06,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 19.44,
+      "utci": 30.28,
+      "heat_index": 29.9,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 20.59,
+      "utci": 32.14,
+      "heat_index": 29.67,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-16",
+      "time": "06:30",
+      "wbgt": 19.66,
+      "utci": 30.74,
+      "heat_index": 30.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 22.83,
+      "utci": 36.13,
+      "heat_index": 34.05,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 24.32,
+      "utci": 38.2,
+      "heat_index": 36.7,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 25.01,
+      "utci": 39.13,
+      "heat_index": 37.94,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 23.22,
+      "utci": 36.71,
+      "heat_index": 34.72,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 22.33,
+      "utci": 35.42,
+      "heat_index": 33.16,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 24.82,
+      "utci": 38.85,
+      "heat_index": 37.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 25.3,
+      "utci": 39.54,
+      "heat_index": 38.46,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 24.06,
+      "utci": 37.68,
+      "heat_index": 36.41,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 25.09,
+      "utci": 39.29,
+      "heat_index": 38.04,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-16",
+      "time": "09:30",
+      "wbgt": 24.23,
+      "utci": 38.04,
+      "heat_index": 36.58,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 26.59,
+      "utci": 42.16,
+      "heat_index": 43.22,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 27.82,
+      "utci": 43.97,
+      "heat_index": 44.96,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 28.37,
+      "utci": 44.78,
+      "heat_index": 45.73,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 26.89,
+      "utci": 42.65,
+      "heat_index": 43.67,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 26.18,
+      "utci": 41.54,
+      "heat_index": 42.61,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 28.25,
+      "utci": 44.56,
+      "heat_index": 45.54,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 28.59,
+      "utci": 45.13,
+      "heat_index": 46.03,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 27.78,
+      "utci": 43.62,
+      "heat_index": 44.79,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 28.38,
+      "utci": 44.89,
+      "heat_index": 45.78,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-16",
+      "time": "12:30",
+      "wbgt": 27.79,
+      "utci": 43.85,
+      "heat_index": 44.89,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 27.12,
+      "utci": 42.94,
+      "heat_index": 44.02,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 28.27,
+      "utci": 44.7,
+      "heat_index": 45.65,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 28.78,
+      "utci": 45.48,
+      "heat_index": 46.38,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 27.39,
+      "utci": 43.41,
+      "heat_index": 44.44,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 26.73,
+      "utci": 42.34,
+      "heat_index": 43.45,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 28.68,
+      "utci": 45.27,
+      "heat_index": 46.21,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 28.97,
+      "utci": 45.81,
+      "heat_index": 46.66,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 28.29,
+      "utci": 44.38,
+      "heat_index": 45.55,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 28.77,
+      "utci": 45.58,
+      "heat_index": 46.41,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-16",
+      "time": "15:30",
+      "wbgt": 28.25,
+      "utci": 44.59,
+      "heat_index": 45.6,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 24.47,
+      "utci": 39.0,
+      "heat_index": 40.67,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 25.72,
+      "utci": 40.85,
+      "heat_index": 42.53,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 26.28,
+      "utci": 41.67,
+      "heat_index": 43.35,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 24.78,
+      "utci": 39.51,
+      "heat_index": 41.17,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 24.05,
+      "utci": 38.36,
+      "heat_index": 40.01,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 26.15,
+      "utci": 41.44,
+      "heat_index": 43.14,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 26.51,
+      "utci": 42.03,
+      "heat_index": 43.68,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 25.64,
+      "utci": 40.45,
+      "heat_index": 42.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 26.31,
+      "utci": 41.79,
+      "heat_index": 43.42,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "wbgt": 25.68,
+      "utci": 40.72,
+      "heat_index": 42.44,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 19.72,
+      "utci": 31.36,
+      "heat_index": 28.75,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 21.22,
+      "utci": 33.51,
+      "heat_index": 31.38,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 21.92,
+      "utci": 34.48,
+      "heat_index": 32.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 20.12,
+      "utci": 31.97,
+      "heat_index": 29.48,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 19.22,
+      "utci": 30.62,
+      "heat_index": 30.86,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 21.72,
+      "utci": 34.18,
+      "heat_index": 32.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 22.22,
+      "utci": 34.9,
+      "heat_index": 33.16,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 20.92,
+      "utci": 32.92,
+      "heat_index": 30.76,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 22.02,
+      "utci": 34.65,
+      "heat_index": 32.79,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "wbgt": 21.12,
+      "utci": 33.33,
+      "heat_index": 31.19,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 17.69,
+      "utci": 27.57,
+      "heat_index": 25.95,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 19.21,
+      "utci": 29.82,
+      "heat_index": 29.41,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 19.93,
+      "utci": 30.85,
+      "heat_index": 30.92,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 18.09,
+      "utci": 28.21,
+      "heat_index": 26.99,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 17.18,
+      "utci": 26.79,
+      "heat_index": 24.7,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 19.72,
+      "utci": 30.53,
+      "heat_index": 30.44,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 20.24,
+      "utci": 31.3,
+      "heat_index": 31.57,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 18.88,
+      "utci": 29.16,
+      "heat_index": 28.32,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 20.04,
+      "utci": 31.04,
+      "heat_index": 31.21,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-17",
+      "time": "00:30",
+      "wbgt": 19.1,
+      "utci": 29.62,
+      "heat_index": 29.1,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 16.88,
+      "utci": 26.4,
+      "heat_index": 24.14,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 18.4,
+      "utci": 28.66,
+      "heat_index": 27.69,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 19.1,
+      "utci": 29.69,
+      "heat_index": 29.23,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 17.29,
+      "utci": 27.05,
+      "heat_index": 25.21,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 16.39,
+      "utci": 25.62,
+      "heat_index": 22.85,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 18.9,
+      "utci": 29.36,
+      "heat_index": 28.74,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 19.41,
+      "utci": 30.14,
+      "heat_index": 29.9,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 18.06,
+      "utci": 27.99,
+      "heat_index": 26.55,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 19.21,
+      "utci": 29.88,
+      "heat_index": 29.54,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "wbgt": 18.28,
+      "utci": 28.46,
+      "heat_index": 27.36,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 17.36,
+      "utci": 27.5,
+      "heat_index": 25.82,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 18.87,
+      "utci": 29.73,
+      "heat_index": 29.2,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 19.57,
+      "utci": 30.74,
+      "heat_index": 30.68,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 17.76,
+      "utci": 28.14,
+      "heat_index": 26.84,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 16.86,
+      "utci": 26.73,
+      "heat_index": 24.6,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 19.37,
+      "utci": 30.43,
+      "heat_index": 30.21,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 19.88,
+      "utci": 31.19,
+      "heat_index": 31.31,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 18.53,
+      "utci": 29.07,
+      "heat_index": 28.14,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 19.68,
+      "utci": 30.94,
+      "heat_index": 30.96,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-17",
+      "time": "06:30",
+      "wbgt": 18.76,
+      "utci": 29.53,
+      "heat_index": 28.9,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 23.63,
+      "utci": 37.21,
+      "heat_index": 35.51,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 25.12,
+      "utci": 39.26,
+      "heat_index": 38.16,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 25.8,
+      "utci": 40.19,
+      "heat_index": 39.4,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 24.02,
+      "utci": 37.79,
+      "heat_index": 36.17,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 23.14,
+      "utci": 36.51,
+      "heat_index": 34.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 25.62,
+      "utci": 39.91,
+      "heat_index": 39.1,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 26.09,
+      "utci": 40.59,
+      "heat_index": 39.9,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 24.87,
+      "utci": 38.76,
+      "heat_index": 37.96,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 25.88,
+      "utci": 40.34,
+      "heat_index": 39.47,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-17",
+      "time": "09:30",
+      "wbgt": 25.03,
+      "utci": 39.1,
+      "heat_index": 38.06,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 27.3,
+      "utci": 43.14,
+      "heat_index": 44.21,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 28.48,
+      "utci": 44.91,
+      "heat_index": 45.86,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 29.0,
+      "utci": 45.7,
+      "heat_index": 46.59,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 27.58,
+      "utci": 43.61,
+      "heat_index": 44.63,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 26.9,
+      "utci": 42.53,
+      "heat_index": 43.62,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 28.9,
+      "utci": 45.48,
+      "heat_index": 46.42,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 29.21,
+      "utci": 46.03,
+      "heat_index": 46.88,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 28.49,
+      "utci": 44.59,
+      "heat_index": 45.74,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 29.0,
+      "utci": 45.8,
+      "heat_index": 46.62,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-17",
+      "time": "12:30",
+      "wbgt": 28.46,
+      "utci": 44.8,
+      "heat_index": 45.8,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 27.98,
+      "utci": 44.02,
+      "heat_index": 45.15,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 29.09,
+      "utci": 45.75,
+      "heat_index": 46.71,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 29.59,
+      "utci": 46.52,
+      "heat_index": 47.4,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 28.23,
+      "utci": 44.48,
+      "heat_index": 45.54,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 27.6,
+      "utci": 43.43,
+      "heat_index": 44.61,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 29.5,
+      "utci": 46.31,
+      "heat_index": 47.25,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 29.77,
+      "utci": 46.84,
+      "heat_index": 47.67,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 29.16,
+      "utci": 45.46,
+      "heat_index": 46.65,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 29.56,
+      "utci": 46.61,
+      "heat_index": 47.43,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-17",
+      "time": "15:30",
+      "wbgt": 29.09,
+      "utci": 45.64,
+      "heat_index": 46.67,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 25.34,
+      "utci": 40.09,
+      "heat_index": 41.87,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 26.56,
+      "utci": 41.91,
+      "heat_index": 43.66,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 27.12,
+      "utci": 42.73,
+      "heat_index": 44.45,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 25.63,
+      "utci": 40.59,
+      "heat_index": 42.34,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 24.92,
+      "utci": 39.46,
+      "heat_index": 41.23,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 26.99,
+      "utci": 42.5,
+      "heat_index": 44.25,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 27.33,
+      "utci": 43.08,
+      "heat_index": 44.77,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 26.51,
+      "utci": 41.55,
+      "heat_index": 43.45,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 27.13,
+      "utci": 42.84,
+      "heat_index": 44.51,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-17",
+      "time": "18:30",
+      "wbgt": 26.53,
+      "utci": 41.79,
+      "heat_index": 43.58,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 19.62,
+      "utci": 31.3,
+      "heat_index": 28.67,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 21.12,
+      "utci": 33.43,
+      "heat_index": 31.22,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 21.82,
+      "utci": 34.4,
+      "heat_index": 32.43,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 20.02,
+      "utci": 31.91,
+      "heat_index": 29.37,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 19.12,
+      "utci": 30.56,
+      "heat_index": 30.79,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 21.62,
+      "utci": 34.1,
+      "heat_index": 32.08,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 22.11,
+      "utci": 34.82,
+      "heat_index": 32.95,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 20.82,
+      "utci": 32.85,
+      "heat_index": 30.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 21.91,
+      "utci": 34.57,
+      "heat_index": 32.59,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "wbgt": 21.02,
+      "utci": 33.26,
+      "heat_index": 31.03,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 16.8,
+      "utci": 26.36,
+      "heat_index": 24.11,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 18.31,
+      "utci": 28.61,
+      "heat_index": 27.64,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 19.01,
+      "utci": 29.63,
+      "heat_index": 29.18,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 17.2,
+      "utci": 27.0,
+      "heat_index": 25.18,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 16.3,
+      "utci": 25.58,
+      "heat_index": 22.84,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 18.81,
+      "utci": 29.31,
+      "heat_index": 28.69,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 19.32,
+      "utci": 30.08,
+      "heat_index": 29.84,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 17.97,
+      "utci": 27.94,
+      "heat_index": 26.51,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 19.12,
+      "utci": 29.83,
+      "heat_index": 29.49,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-18",
+      "time": "00:30",
+      "wbgt": 18.2,
+      "utci": 28.41,
+      "heat_index": 27.32,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 16.01,
+      "utci": 25.2,
+      "heat_index": 22.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 17.5,
+      "utci": 27.45,
+      "heat_index": 25.89,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 18.2,
+      "utci": 28.47,
+      "heat_index": 27.46,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 16.41,
+      "utci": 25.85,
+      "heat_index": 23.37,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 15.52,
+      "utci": 24.42,
+      "heat_index": 20.95,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 17.99,
+      "utci": 28.15,
+      "heat_index": 26.95,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 18.5,
+      "utci": 28.92,
+      "heat_index": 28.14,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 17.16,
+      "utci": 26.77,
+      "heat_index": 24.7,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 18.3,
+      "utci": 28.67,
+      "heat_index": 27.78,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-18",
+      "time": "03:30",
+      "wbgt": 17.39,
+      "utci": 27.25,
+      "heat_index": 25.55,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 16.48,
+      "utci": 26.3,
+      "heat_index": 24.03,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 17.97,
+      "utci": 28.53,
+      "heat_index": 27.48,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 18.67,
+      "utci": 29.54,
+      "heat_index": 28.98,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 16.88,
+      "utci": 26.94,
+      "heat_index": 25.07,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 15.98,
+      "utci": 25.53,
+      "heat_index": 22.77,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 18.46,
+      "utci": 29.22,
+      "heat_index": 28.5,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 18.97,
+      "utci": 29.98,
+      "heat_index": 29.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 17.64,
+      "utci": 27.87,
+      "heat_index": 26.37,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 18.77,
+      "utci": 29.73,
+      "heat_index": 29.28,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-18",
+      "time": "06:30",
+      "wbgt": 17.86,
+      "utci": 28.33,
+      "heat_index": 27.16,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 24.45,
+      "utci": 38.3,
+      "heat_index": 37.0,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 25.92,
+      "utci": 40.32,
+      "heat_index": 39.62,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 26.6,
+      "utci": 41.24,
+      "heat_index": 40.84,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 24.83,
+      "utci": 38.86,
+      "heat_index": 37.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 23.95,
+      "utci": 37.6,
+      "heat_index": 36.12,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 26.42,
+      "utci": 40.97,
+      "heat_index": 40.56,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 26.88,
+      "utci": 41.63,
+      "heat_index": 41.33,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 25.69,
+      "utci": 39.84,
+      "heat_index": 39.51,
+      "thermal_stress_level": "Low",
+      "alert_level": "Orange"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 26.67,
+      "utci": 41.38,
+      "heat_index": 40.89,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-18",
+      "time": "09:30",
+      "wbgt": 25.83,
+      "utci": 40.17,
+      "heat_index": 39.54,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 28.17,
+      "utci": 44.22,
+      "heat_index": 45.34,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 29.32,
+      "utci": 45.96,
+      "heat_index": 46.92,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 29.83,
+      "utci": 46.74,
+      "heat_index": 47.62,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 28.44,
+      "utci": 44.69,
+      "heat_index": 45.74,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 27.79,
+      "utci": 43.62,
+      "heat_index": 44.79,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 29.73,
+      "utci": 46.53,
+      "heat_index": 47.47,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 30.02,
+      "utci": 47.07,
+      "heat_index": 47.9,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 29.36,
+      "utci": 45.67,
+      "heat_index": 46.86,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 29.81,
+      "utci": 46.83,
+      "heat_index": 47.65,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "wbgt": 29.31,
+      "utci": 45.86,
+      "heat_index": 46.88,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 28.84,
+      "utci": 45.1,
+      "heat_index": 46.26,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 29.92,
+      "utci": 46.79,
+      "heat_index": 47.75,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 30.39,
+      "utci": 47.55,
+      "heat_index": 48.41,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 29.08,
+      "utci": 45.54,
+      "heat_index": 46.62,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 28.47,
+      "utci": 44.51,
+      "heat_index": 45.74,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 30.31,
+      "utci": 47.35,
+      "heat_index": 48.27,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 30.56,
+      "utci": 47.86,
+      "heat_index": 48.67,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 30.02,
+      "utci": 46.53,
+      "heat_index": 47.73,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 30.35,
+      "utci": 47.63,
+      "heat_index": 48.43,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-18",
+      "time": "15:30",
+      "wbgt": 29.92,
+      "utci": 46.69,
+      "heat_index": 47.72,
+      "thermal_stress_level": "High",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 26.2,
+      "utci": 41.18,
+      "heat_index": 43.05,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 27.41,
+      "utci": 42.98,
+      "heat_index": 44.77,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 27.95,
+      "utci": 43.79,
+      "heat_index": 45.53,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 26.49,
+      "utci": 41.67,
+      "heat_index": 43.5,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 25.79,
+      "utci": 40.56,
+      "heat_index": 42.44,
+      "thermal_stress_level": "Low",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 27.83,
+      "utci": 43.56,
+      "heat_index": 45.34,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 28.16,
+      "utci": 44.13,
+      "heat_index": 45.83,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 27.38,
+      "utci": 42.64,
+      "heat_index": 44.61,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 27.95,
+      "utci": 43.89,
+      "heat_index": 45.58,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-18",
+      "time": "18:30",
+      "wbgt": 27.38,
+      "utci": 42.86,
+      "heat_index": 44.7,
+      "thermal_stress_level": "Moderate",
+      "alert_level": "Red"
+    },
+    {
+      "ward_id": "BPL_W001",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 20.53,
+      "utci": 32.48,
+      "heat_index": 30.12,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W002",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 22.03,
+      "utci": 34.61,
+      "heat_index": 32.81,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W003",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 22.74,
+      "utci": 35.58,
+      "heat_index": 34.08,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W004",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 20.92,
+      "utci": 33.08,
+      "heat_index": 30.85,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W005",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 20.02,
+      "utci": 31.74,
+      "heat_index": 29.21,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W006",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 22.54,
+      "utci": 35.28,
+      "heat_index": 33.73,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W007",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 23.04,
+      "utci": 35.99,
+      "heat_index": 34.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W008",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 21.74,
+      "utci": 34.03,
+      "heat_index": 32.27,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    },
+    {
+      "ward_id": "BPL_W009",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 22.83,
+      "utci": 35.74,
+      "heat_index": 34.24,
+      "thermal_stress_level": "Low",
+      "alert_level": "Yellow"
+    },
+    {
+      "ward_id": "BPL_W010",
+      "date": "2026-09-18",
+      "time": "21:30",
+      "wbgt": 21.93,
+      "utci": 34.43,
+      "heat_index": 32.63,
+      "thermal_stress_level": "Low",
+      "alert_level": "Green"
+    }
+  ],
+  "data_source": "Taap Kavach thermal engine applied to supplied ward-interpolated observations"
+}
