@@ -7,7 +7,8 @@ from pathlib import Path
 from .thermal_engine import ThermalStressEngine, WeatherInput
 
 ROOT = Path(__file__).resolve().parents[3]
-DATA_DIR = ROOT / "data"
+PACKAGE_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = next((candidate for candidate in (PACKAGE_ROOT / "data", ROOT / "data") if candidate.exists()), PACKAGE_ROOT / "data")
 WARDS_PATH = DATA_DIR / "wards.json"
 WEATHER_PATH = DATA_DIR / "weather_history.json"
 DAILY_SUMMARY_PATH = DATA_DIR / "ward_daily_summary.json"

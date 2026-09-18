@@ -1,0 +1,6 @@
+tests/
+scripts/
+run.py
+__pycache__/
+*.py[cod]
+.env.example

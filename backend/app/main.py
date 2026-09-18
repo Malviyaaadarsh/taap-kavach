@@ -21,8 +21,11 @@ from .services.data_store import alert_details, daily_weather_for, indices_for, 
 from .services.thermal_engine import ThermalStressEngine, WeatherInput
 
 ROOT = Path(__file__).resolve().parents[2]
-DB_PATH = ROOT / "data" / "taap_kavach.db"
-MODEL_PATH = ROOT / "ml-models" / "xgboost_model.pkl"
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
+DATA_ROOT = next((candidate for candidate in (PACKAGE_ROOT / "data", ROOT / "data") if candidate.exists()), PACKAGE_ROOT / "data")
+MODEL_ROOT = next((candidate for candidate in (PACKAGE_ROOT / "ml-models", ROOT / "ml-models") if candidate.exists()), PACKAGE_ROOT / "ml-models")
+DB_PATH = Path(os.getenv("TAAP_DATABASE_PATH", "/tmp/taap_kavach.db" if os.getenv("VERCEL") else str(ROOT / "data" / "taap_kavach.db")))
+MODEL_PATH = MODEL_ROOT / "xgboost_model.pkl"
 JWT_SECRET = os.getenv("TAAP_JWT_SECRET", "local-prototype-secret-change-me")
 ALGORITHM = "HS256"
 security = HTTPBearer(auto_error=False)
@@ -162,7 +165,7 @@ def forecast_rows(ward_id: str, days_ahead: int) -> list[dict]:
     if MODEL_PATH.exists():
         try:
             with MODEL_PATH.open("rb") as handle: model = pickle.load(handle)
-        except (OSError, pickle.PickleError): model = None
+        except Exception: model = None
     rows = []
     base_date = datetime.fromisoformat(recent["date"])
     for offset in range(1, days_ahead + 1):
@@ -187,7 +190,8 @@ def forecast_rows(ward_id: str, days_ahead: int) -> list[dict]:
 
 @app.get("/api/ward/{ward_id}/forecast", tags=["Forecast"])
 def forecast(ward_id: str, days_ahead: int = Query(5, ge=1, le=5)) -> dict:
-    return {"ward_id": ward_id, "forecast": forecast_rows(ward_id, days_ahead), "data_source": "Supplied Bhopal snapshot plus ward interpolation", "model_note": "XGBoost forecast trained on the supplied five-day ward/hourly dataset; confidence is not a guarantee."}
+    model_note = "XGBoost forecast trained on the supplied five-day ward/hourly dataset; confidence is not a guarantee." if MODEL_PATH.exists() else "Deterministic thermal projection fallback; the optional XGBoost artifact was not loaded in this serverless runtime."
+    return {"ward_id": ward_id, "forecast": forecast_rows(ward_id, days_ahead), "data_source": "Supplied Bhopal snapshot plus ward interpolation", "model_note": model_note}
 
 
 @app.get("/api/ward/{ward_id}/alert-status", tags=["Alerts"])

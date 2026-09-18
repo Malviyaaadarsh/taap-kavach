@@ -9,4 +9,5 @@ dist/
 .vite/
 *.log
 raw/
+.vercel/
 __pycache__/
