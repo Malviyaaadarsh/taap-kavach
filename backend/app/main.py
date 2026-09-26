@@ -31,9 +31,19 @@ ALGORITHM = "HS256"
 security = HTTPBearer(auto_error=False)
 
 app = FastAPI(title="Taap Kavach API", version="1.1.0", description="Bhopal ward-level thermal stress monitoring using supplied MET Norway and ward-interpolated data.")
-origins = [item.strip() for item in os.getenv("TAAP_CORS_ORIGINS", "http://localhost:5173,http://localhost:3000").split(",")]
-app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+origins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://taap-kavach.vercel.app",
+]
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def password_hash(password: str, salt: bytes | None = None) -> str:
     salt = salt or secrets.token_bytes(16)
