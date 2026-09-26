@@ -65,14 +65,106 @@ class ThermalStressEngine:
         return round((hi_f - 32) * 5 / 9, 2)
 
     @classmethod
-    def calculate(cls, weather: WeatherInput) -> dict:
+    def calculate_htsi(cls, weather: WeatherInput, wbgt: float | None = None, utci: float | None = None, heat_index: float | None = None) -> dict:
+        weather.validate()
+        wbgt = wbgt if wbgt is not None else cls.calculate_wbgt(weather)
+        utci = utci if utci is not None else cls.calculate_utci(weather)
+        hi = heat_index if heat_index is not None else cls.calculate_heat_index(weather)
+
+        # Normalized sub-scores on a 0-100 scale
+        utci_norm = max(0.0, min(100.0, (utci - 20.0) / 30.0 * 100.0))
+        wbgt_norm = max(0.0, min(100.0, (wbgt - 18.0) / 18.0 * 100.0))
+        hi_norm = max(0.0, min(100.0, (hi - 22.0) / 30.0 * 100.0))
+        rad_norm = max(0.0, min(100.0, weather.solar_radiation / 800.0 * 100.0))
+        hum_norm = max(0.0, min(100.0, max(0.0, weather.humidity - 35.0) / 50.0 * 100.0))
+        wind_mitigation = min(12.0, weather.wind_speed * 0.45)
+
+        raw_score = (0.35 * utci_norm + 0.25 * wbgt_norm + 0.20 * hi_norm + 0.12 * rad_norm + 0.08 * hum_norm) - wind_mitigation
+        score = round(max(0.0, min(100.0, raw_score)), 1)
+
+        if score < 40:
+            category = "Low"
+            alert = "Green"
+        elif score < 60:
+            category = "Moderate"
+            alert = "Yellow"
+        elif score < 80:
+            category = "High"
+            alert = "Orange"
+        else:
+            category = "Extreme"
+            alert = "Red"
+
+        contributors = [
+            {"factor": "Universal Thermal Climate Index (UTCI)", "weight_pct": 35, "contribution_score": round(0.35 * utci_norm, 1), "value": f"{utci} °C"},
+            {"factor": "Wet-Bulb Globe Temperature (WBGT)", "weight_pct": 25, "contribution_score": round(0.25 * wbgt_norm, 1), "value": f"{wbgt} °C"},
+            {"factor": "Heat Index (HI)", "weight_pct": 20, "contribution_score": round(0.20 * hi_norm, 1), "value": f"{hi} °C"},
+            {"factor": "Solar Radiation Load", "weight_pct": 12, "contribution_score": round(0.12 * rad_norm, 1), "value": f"{weather.solar_radiation} W/m²"},
+            {"factor": "Relative Humidity Stress", "weight_pct": 8, "contribution_score": round(0.08 * hum_norm, 1), "value": f"{weather.humidity}%"}
+        ]
+        contributors.sort(key=lambda item: item["contribution_score"], reverse=True)
+
+        return {
+            "score": score,
+            "risk_category": category,
+            "alert_level": alert,
+            "label": "Taap Kavach HTSI — Prototype Composite Score",
+            "scale": "0-100",
+            "top_contributors": contributors[:3],
+            "all_contributors": contributors,
+            "mitigating_factors": [
+                {"factor": "Wind Ventilation", "reduction_pts": round(wind_mitigation, 1), "value": f"{weather.wind_speed} km/h"}
+            ]
+        }
+
+    @classmethod
+    def get_risk_drivers(cls, weather: WeatherInput, utci: float, htsi: dict, vegetation: str = "Medium") -> dict:
+        elevated = []
+        if utci >= 38:
+            elevated.append({"title": "Elevated UTCI perceived heat", "impact": "High", "detail": f"Perceived thermal temperature {utci}°C exceeds human comfort envelope."})
+        elif utci >= 32:
+            elevated.append({"title": "Moderate perceived thermal stress", "impact": "Medium", "detail": f"UTCI at {utci}°C requires caution for sustained exposure."})
+
+        if weather.humidity >= 55:
+            elevated.append({"title": "High humidity impedance", "impact": "High", "detail": f"Humidity at {weather.humidity}% severely inhibits evaporative cooling (sweat evaporation)."})
+        elif weather.humidity >= 45:
+            elevated.append({"title": "Sustained humidity level", "impact": "Moderate", "detail": f"Humidity at {weather.humidity}% compounds physiological thermal load."})
+
+        if weather.solar_radiation >= 500:
+            elevated.append({"title": "Intense direct solar irradiance", "impact": "High", "detail": f"Solar radiation of {weather.solar_radiation} W/m² delivers direct radiant energy."})
+        elif weather.solar_radiation >= 250:
+            elevated.append({"title": "Moderate solar radiation", "impact": "Moderate", "detail": f"Radiation at {weather.solar_radiation} W/m² adds to surface heating."})
+
+        protective = []
+        if weather.wind_speed >= 12:
+            protective.append({"title": "Active wind ventilation", "impact": "High", "detail": f"Wind at {weather.wind_speed} km/h enhances convective and evaporative heat dissipation."})
+        elif weather.wind_speed >= 7:
+            protective.append({"title": "Moderate wind circulation", "impact": "Moderate", "detail": f"Breeze at {weather.wind_speed} km/h provides partial convective relief."})
+
+        if vegetation == "High":
+            protective.append({"title": "Dense canopy vegetation", "impact": "High", "detail": "Substantial tree cover produces localized microclimatic shading and cooling."})
+        elif vegetation == "Medium":
+            protective.append({"title": "Moderate urban green buffer", "impact": "Moderate", "detail": "Presence of vegetation partially softens urban heat island effects."})
+
+        return {
+            "elevated_contributors": elevated,
+            "protective_contributors": protective
+        }
+
+    @classmethod
+    def calculate(cls, weather: WeatherInput, vegetation: str = "Medium") -> dict:
         wbgt = cls.calculate_wbgt(weather)
         utci = cls.calculate_utci(weather)
         heat_index = cls.calculate_heat_index(weather)
+        htsi = cls.calculate_htsi(weather, wbgt=wbgt, utci=utci, heat_index=heat_index)
+        risk_drivers = cls.get_risk_drivers(weather, utci=utci, htsi=htsi, vegetation=vegetation)
         return {
             "wbgt": wbgt,
             "utci": utci,
             "heat_index": heat_index,
+            "htsi": htsi["score"],
+            "htsi_details": htsi,
+            "risk_drivers": risk_drivers,
             "thermal_stress_level": cls.classify_thermal_stress(wbgt),
             "alert_level": cls.classify_alert_level(utci),
         }
@@ -90,3 +182,4 @@ class ThermalStressEngine:
         if stress_value < 38: return "Yellow"
         if stress_value < 40: return "Orange"
         return "Red"
+
