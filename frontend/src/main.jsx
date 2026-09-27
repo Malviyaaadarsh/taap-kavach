@@ -1471,12 +1471,18 @@ const translations = {
   },
 };
 
-function profilePath(user) {
-  if (!user?.role) return '/select-role';
+function resolveDashboardPath(user) {
+  if (!user) return '/login';
   if (user.role === 'government') return '/government';
   if (user.user_type_selection === 'outdoor_worker') return '/worker';
   if (user.user_type_selection === 'citizen') return '/citizen';
-  return '/select-user-type';
+  if (user.user_type === 'local_administration' || user.user_type === 'healthcare_facility') return '/government';
+  if (user.role === 'citizen') return '/citizen';
+  return '/government';
+}
+
+function profilePath(user) {
+  return resolveDashboardPath(user);
 }
 
 function ProtectedRoute({ user, role, userType, children }) {
@@ -1566,7 +1572,7 @@ function LoginPage({ onLoginSuccess }) {
     apiLogin(email, password)
       .then((data) => {
         onLoginSuccess(data);
-        navigate('/select-role');
+        navigate(resolveDashboardPath(data));
       })
       .catch(() => {
         setError('Authentication failed. Verify credentials.');
@@ -1631,7 +1637,7 @@ function SignupPage({ onLoginSuccess }) {
     event.preventDefault();
     setError('');
     apiRegister(email, password)
-      .then((data) => { onLoginSuccess(data); navigate('/select-role'); })
+      .then((data) => { onLoginSuccess(data); navigate(resolveDashboardPath(data)); })
       .catch(() => setError('Could not create the account. Check your details and try again.'));
   };
   return <div className="page-container" style={{ maxWidth: 500, paddingTop: 60 }}><div className="panel">
@@ -1716,8 +1722,20 @@ function ChatbotWidget({ ward, alert, bundle }) {
 // ==========================================
 // ROOT APP COMPONENT
 // ==========================================
+function readStoredUser() {
+  try {
+    const raw = localStorage.getItem('taap_user');
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === 'object' ? parsed : null;
+  } catch {
+    localStorage.removeItem('taap_user');
+    return null;
+  }
+}
+
 function App() {
-  const [user, setUser] = useState(() => JSON.parse(localStorage.getItem('taap_user') || 'null'));
+  const [user, setUser] = useState(readStoredUser);
   const [activeTab, setActiveTab] = useState('overview');
 
   // Geographic Hierarchy State
@@ -1796,6 +1814,7 @@ function App() {
 
   return (
     <Routes>
+      <Route path="/" element={<LocationAudienceDashboard user={user} onLogout={handleLogout} />} />
       <Route
         path="/login"
         element={<LoginPage onLoginSuccess={(userData) => setUser(userData)} />}
@@ -1886,7 +1905,7 @@ function App() {
           </AppShell>
         </ProtectedRoute>}
       />
-      <Route path="*" element={<Navigate to={user ? profilePath(user) : '/login'} replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }

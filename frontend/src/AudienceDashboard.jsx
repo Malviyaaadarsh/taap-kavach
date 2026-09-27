@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { CircleMarker, MapContainer, TileLayer } from 'react-leaflet';
 import { getLocationWeather, getWardBundle } from './api';
 import { audienceTranslations } from './audienceTranslations';
@@ -16,8 +17,16 @@ const safeValue = (value, suffix = '') => {
   return `${value}${suffix}`;
 };
 
-export default function AudienceDashboard({ worker = false, onLogout }) {
-  const [language, setLanguage] = useState(() => localStorage.getItem('taap_language') || 'en');
+const readStoredLanguage = () => {
+  try {
+    return localStorage.getItem('taap_language') || 'en';
+  } catch {
+    return 'en';
+  }
+};
+
+export default function AudienceDashboard({ worker = false, onLogout, user = null }) {
+  const [language, setLanguage] = useState(readStoredLanguage);
   const [fallbackBundle, setFallbackBundle] = useState(null);
   const [locationData, setLocationData] = useState(null);
   const [locationState, setLocationState] = useState('idle');
@@ -29,8 +38,20 @@ export default function AudienceDashboard({ worker = false, onLogout }) {
   const lastCoordinates = useRef(null);
   const text = audienceTranslations[language];
 
+  const profilePath = user?.role === 'government'
+    ? '/government'
+    : user?.user_type_selection === 'outdoor_worker'
+      ? '/worker'
+      : user?.user_type_selection === 'citizen'
+        ? '/citizen'
+        : '/select-role';
+
   useEffect(() => {
-    localStorage.setItem('taap_language', language);
+    try {
+      localStorage.setItem('taap_language', language);
+    } catch {
+      // Ignore storage failures so the UI still renders.
+    }
   }, [language]);
 
   useEffect(() => {
@@ -126,7 +147,18 @@ export default function AudienceDashboard({ worker = false, onLogout }) {
   return <div className="audience-dashboard">
     <header className="audience-header">
       <div className="audience-brand"><span className="audience-brand-icon">☀</span><div><span className="eyebrow">TAAP KAVACH</span><strong>{worker ? text.workerTitle : text.citizenTitle}</strong></div></div>
-      <div className="audience-actions"><button className={language === 'en' ? 'active' : ''} onClick={() => setLanguage('en')}>English</button><span>|</span><button className={language === 'hi' ? 'active' : ''} onClick={() => setLanguage('hi')}>हिंदी</button><button className="btn-sm" onClick={onLogout}>{text.signOut}</button></div>
+      <nav className="audience-actions" aria-label="Public navigation">
+        <Link to="/" className="btn-sm">Home</Link>
+        {user ? <Link to={profilePath} className="btn-sm btn-primary">Detailed Dashboard</Link> : null}
+        {!user && <Link to="/login" className="btn-sm">Login</Link>}
+        {!user && <Link to="/signup" className="btn-sm">Sign Up</Link>}
+        {user ? <button className="btn-sm" onClick={onLogout}>{text.signOut}</button> : null}
+        <div className="language-pair">
+          <button className={language === 'en' ? 'active' : ''} onClick={() => setLanguage('en')}>English</button>
+          <span>|</span>
+          <button className={language === 'hi' ? 'active' : ''} onClick={() => setLanguage('hi')}>हिंदी</button>
+        </div>
+      </nav>
     </header>
     <main className="audience-main">
       <div className="audience-welcome"><div><h1>{worker ? text.workerTitle : text.citizenTitle}</h1><p>{worker ? text.workerIntro : text.citizenIntro}</p></div><div className="audience-action-buttons"><button className="btn-sm btn-primary" onClick={speak}>{speaking ? `⏹ ${text.stop}` : `🔊 ${text.listen}`}</button><button className="btn-sm" onClick={refresh}>↻ {text.refresh}</button></div></div>

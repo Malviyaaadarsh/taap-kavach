@@ -1,11 +1,29 @@
 import axios from 'axios';
 
+const readStorage = (key) => {
+  try {
+    if (typeof window === 'undefined') return null;
+    return window.localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+};
+
+const writeStorage = (key, value) => {
+  try {
+    if (typeof window === 'undefined') return;
+    window.localStorage.setItem(key, value);
+  } catch {
+    // Ignore storage write failures so the UI still renders.
+  }
+};
+
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api',
 });
 
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('taap_token');
+  const token = readStorage('taap_token');
   if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
@@ -67,8 +85,8 @@ export const getHealthcare = (id) => api.get(`/healthcare/readiness?ward_id=${id
 // Auth & Chat
 export const login = (email, password) =>
   api.post('/auth/login', { email, password }).then((r) => {
-    localStorage.setItem('taap_token', r.data.access_token);
-    localStorage.setItem('taap_user', JSON.stringify(r.data));
+    writeStorage('taap_token', r.data.access_token);
+    writeStorage('taap_user', JSON.stringify(r.data));
     return r.data;
   });
 
@@ -79,22 +97,32 @@ export const register = (email, password, organizationName = 'Taap Kavach User')
     organization_name: organizationName,
     user_type: 'local_administration',
   }).then((r) => {
-    localStorage.setItem('taap_token', r.data.access_token);
-    localStorage.setItem('taap_user', JSON.stringify(r.data));
+    writeStorage('taap_token', r.data.access_token);
+    writeStorage('taap_user', JSON.stringify(r.data));
     return r.data;
   });
 
 export const updateProfile = (profile) =>
   api.patch('/auth/profile', profile).then((r) => {
-    const current = JSON.parse(localStorage.getItem('taap_user') || '{}');
+    let current = {};
+    try {
+      const previous = readStorage('taap_user');
+      current = previous ? JSON.parse(previous) : {};
+    } catch {
+      current = {};
+    }
     const updated = { ...current, ...r.data };
-    localStorage.setItem('taap_user', JSON.stringify(updated));
+    writeStorage('taap_user', JSON.stringify(updated));
     return updated;
   });
 
 export const logout = () => {
-  localStorage.removeItem('taap_token');
-  localStorage.removeItem('taap_user');
+  try {
+    localStorage.removeItem('taap_token');
+    localStorage.removeItem('taap_user');
+  } catch {
+    // Ignore storage access failures so logout stays safe.
+  }
 };
 
 export const chatWithAssistant = (question, wardId) =>
