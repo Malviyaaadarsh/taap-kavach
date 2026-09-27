@@ -50,6 +50,9 @@ export const getWardBundle = (id) =>
     thermal: history.history,
   }));
 
+export const getLocationWeather = (latitude, longitude) =>
+  api.get(`/location/weather?latitude=${encodeURIComponent(latitude)}&longitude=${encodeURIComponent(longitude)}`).then((r) => r.data);
+
 // Administration & Healthcare Workspaces
 export const getAdminOverview = () => api.get('/admin/overview').then((r) => r.data);
 export const getAdminActions = (wardId) => api.get(`/admin/actions?ward_id=${wardId}`).then((r) => r.data);
@@ -67,6 +70,26 @@ export const login = (email, password) =>
     localStorage.setItem('taap_token', r.data.access_token);
     localStorage.setItem('taap_user', JSON.stringify(r.data));
     return r.data;
+  });
+
+export const register = (email, password, organizationName = 'Taap Kavach User') =>
+  api.post('/auth/register', {
+    email,
+    password,
+    organization_name: organizationName,
+    user_type: 'local_administration',
+  }).then((r) => {
+    localStorage.setItem('taap_token', r.data.access_token);
+    localStorage.setItem('taap_user', JSON.stringify(r.data));
+    return r.data;
+  });
+
+export const updateProfile = (profile) =>
+  api.patch('/auth/profile', profile).then((r) => {
+    const current = JSON.parse(localStorage.getItem('taap_user') || '{}');
+    const updated = { ...current, ...r.data };
+    localStorage.setItem('taap_user', JSON.stringify(updated));
+    return updated;
   });
 
 export const logout = () => {

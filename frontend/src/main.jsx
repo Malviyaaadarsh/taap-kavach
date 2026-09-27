@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Link, Route, Routes, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Link, Navigate, Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import { CircleMarker, MapContainer, Popup, TileLayer, useMap } from 'react-leaflet';
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis, ReferenceLine, Legend } from 'recharts';
 import 'leaflet/dist/leaflet.css';
@@ -21,10 +21,13 @@ import {
   getHealthcareReadiness,
   getMethodology,
   login as apiLogin,
+  register as apiRegister,
   logout as apiLogout,
+  updateProfile,
 } from './api';
 
 import { CHATBOT_PROMPTS, getChatbotReply } from './chatbot';
+import LocationAudienceDashboard from './AudienceDashboard';
 
 // Alert level configurations
 const ALERT_CONFIG = {
@@ -1441,8 +1444,115 @@ function MethodologyView() {
   );
 }
 
+const translations = {
+  en: {
+    subtitle: 'How would you like to use Taap Kavach?',
+    government: 'Government Authority',
+    governmentDescription: 'Monitor heat risk, wards, hospitals, alerts and city resources.',
+    citizen: 'Common People',
+    citizenDescription: 'Get simple heat alerts, safety advice and nearby help.',
+    help: 'How can we help you?',
+    worker: 'Outdoor Worker',
+    workerDescription: 'Get simple heat safety advice for outdoor work.',
+    generalCitizen: 'General Citizen',
+    generalCitizenDescription: 'Get heat alerts, safety advice and nearby help.',
+  },
+  hi: {
+    subtitle: 'आप ताप कवच का उपयोग कैसे करना चाहते हैं?',
+    government: 'सरकारी अधिकारी',
+    governmentDescription: 'गर्मी के जोखिम, वार्ड, अस्पताल, अलर्ट और शहर के संसाधनों पर निगरानी रखें।',
+    citizen: 'आम नागरिक',
+    citizenDescription: 'सरल गर्मी अलर्ट, सुरक्षा सलाह और आसपास की सहायता पाएं।',
+    help: 'हम आपकी कैसे मदद कर सकते हैं?',
+    worker: 'बाहरी काम करने वाला व्यक्ति',
+    workerDescription: 'बाहरी काम के लिए सरल गर्मी सुरक्षा सलाह पाएं।',
+    generalCitizen: 'सामान्य नागरिक',
+    generalCitizenDescription: 'गर्मी अलर्ट, सुरक्षा सलाह और आसपास की सहायता पाएं।',
+  },
+};
+
+function profilePath(user) {
+  if (!user?.role) return '/select-role';
+  if (user.role === 'government') return '/government';
+  if (user.user_type_selection === 'outdoor_worker') return '/worker';
+  if (user.user_type_selection === 'citizen') return '/citizen';
+  return '/select-user-type';
+}
+
+function ProtectedRoute({ user, role, userType, children }) {
+  if (!user) return <Navigate to="/login" replace />;
+  if (role && user.role !== role) return <Navigate to={profilePath(user)} replace />;
+  if (userType && user.user_type_selection !== userType) return <Navigate to={profilePath(user)} replace />;
+  return children;
+}
+
+function SelectionCard({ icon, title, description, onClick }) {
+  return <button className="selection-card" onClick={onClick}>
+    <span className="selection-icon" aria-hidden="true">{icon}</span>
+    <span className="selection-card-title">{title}</span>
+    <span className="selection-card-description">{description}</span>
+  </button>;
+}
+
+function RoleSelectionPage({ user, onUserUpdate }) {
+  const [language, setLanguage] = useState(() => localStorage.getItem('taap_language') || 'en');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+  const text = translations[language];
+
+  const chooseRole = (role) => {
+    setError('');
+    updateProfile({ role })
+      .then((updated) => {
+        onUserUpdate(updated);
+        navigate(role === 'government' ? '/government' : '/select-user-type');
+      })
+      .catch(() => setError('We could not save your choice. Please try again.'));
+  };
+
+  return <SelectionPage title="Welcome to Taap Kavach" subtitle={text.subtitle} language={language} setLanguage={setLanguage} error={error}>
+    <SelectionCard icon="🏛️" title={text.government} description={text.governmentDescription} onClick={() => chooseRole('government')} />
+    <SelectionCard icon="👥" title={text.citizen} description={text.citizenDescription} onClick={() => chooseRole('citizen')} />
+  </SelectionPage>;
+}
+
+function UserTypeSelectionPage({ onUserUpdate }) {
+  const [language, setLanguage] = useState(() => localStorage.getItem('taap_language') || 'en');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+  const text = translations[language];
+  const chooseUserType = (userType) => updateProfile({ user_type: userType })
+    .then((updated) => { onUserUpdate(updated); navigate(userType === 'outdoor_worker' ? '/worker' : '/citizen'); })
+    .catch(() => setError('We could not save your choice. Please try again.'));
+
+  return <SelectionPage title="Welcome to Taap Kavach" subtitle={text.help} language={language} setLanguage={setLanguage} error={error}>
+    <SelectionCard icon="👷" title={text.worker} description={text.workerDescription} onClick={() => chooseUserType('outdoor_worker')} />
+    <SelectionCard icon="👤" title={text.generalCitizen} description={text.generalCitizenDescription} onClick={() => chooseUserType('citizen')} />
+  </SelectionPage>;
+}
+
+function SelectionPage({ title, subtitle, language, setLanguage, error, children }) {
+  useEffect(() => {
+    localStorage.setItem('taap_language', language);
+  }, [language]);
+  return <div className="selection-page">
+    <div className="language-switcher" aria-label="Language selection">
+      <button className={language === 'en' ? 'active' : ''} onClick={() => setLanguage('en')}>English</button>
+      <span>|</span>
+      <button className={language === 'hi' ? 'active' : ''} onClick={() => setLanguage('hi')}>हिंदी</button>
+    </div>
+    <div className="selection-content">
+      <span className="eyebrow">TAAP KAVACH</span>
+      <h1>{title}</h1>
+      <p className="selection-subtitle">{subtitle}</p>
+      {error && <div className="selection-error">{error}</div>}
+      <div className="selection-grid">{children}</div>
+    </div>
+  </div>;
+}
+
 // ==========================================
-// 9. LOGIN PAGE
+// 9. LOGIN AND SIGNUP PAGES
 // ==========================================
 function LoginPage({ onLoginSuccess }) {
   const [email, setEmail] = useState('admin.bhopal@taapkavach.gov.in');
@@ -1456,7 +1566,7 @@ function LoginPage({ onLoginSuccess }) {
     apiLogin(email, password)
       .then((data) => {
         onLoginSuccess(data);
-        navigate('/');
+        navigate('/select-role');
       })
       .catch(() => {
         setError('Authentication failed. Verify credentials.');
@@ -1498,6 +1608,8 @@ function LoginPage({ onLoginSuccess }) {
           </button>
         </form>
 
+        <button className="text-button" onClick={() => navigate('/signup')}>New to Taap Kavach? Create an account</button>
+
         <div style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid var(--border-light)', fontSize: 11, color: 'var(--text-muted)' }}>
           <b>Demo Stakeholder Accounts:</b>
           <div style={{ marginTop: 6 }}>
@@ -1508,6 +1620,30 @@ function LoginPage({ onLoginSuccess }) {
       </div>
     </div>
   );
+}
+
+function SignupPage({ onLoginSuccess }) {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+  const handleSignup = (event) => {
+    event.preventDefault();
+    setError('');
+    apiRegister(email, password)
+      .then((data) => { onLoginSuccess(data); navigate('/select-role'); })
+      .catch(() => setError('Could not create the account. Check your details and try again.'));
+  };
+  return <div className="page-container" style={{ maxWidth: 500, paddingTop: 60 }}><div className="panel">
+    <span className="eyebrow">TAAP KAVACH</span><h2>Create your account</h2>
+    {error && <div className="selection-error">{error}</div>}
+    <form onSubmit={handleSignup}>
+      <label>Email<input type="email" value={email} onChange={(event) => setEmail(event.target.value)} required /></label>
+      <label>Password<input type="password" minLength={6} value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
+      <button type="submit" className="btn-sm btn-primary" style={{ width: '100%', padding: 9 }}>Create account</button>
+    </form>
+    <button className="text-button" onClick={() => navigate('/login')}>Already have an account? Sign in</button>
+  </div></div>;
 }
 
 // ==========================================
@@ -1654,6 +1790,8 @@ function App() {
     setUser(null);
   };
 
+  const handleUserUpdate = (updatedUser) => setUser(updatedUser);
+
   const selectedWard = wards.find((w) => w.ward_id === wardId) || wards[0];
 
   return (
@@ -1663,8 +1801,28 @@ function App() {
         element={<LoginPage onLoginSuccess={(userData) => setUser(userData)} />}
       />
       <Route
-        path="*"
-        element={
+        path="/signup"
+        element={<SignupPage onLoginSuccess={(userData) => setUser(userData)} />}
+      />
+      <Route
+        path="/select-role"
+        element={<ProtectedRoute user={user}><RoleSelectionPage user={user} onUserUpdate={handleUserUpdate} /></ProtectedRoute>}
+      />
+      <Route
+        path="/select-user-type"
+        element={<ProtectedRoute user={user} role="citizen"><UserTypeSelectionPage onUserUpdate={handleUserUpdate} /></ProtectedRoute>}
+      />
+      <Route
+        path="/citizen"
+        element={<ProtectedRoute user={user} role="citizen" userType="citizen"><LocationAudienceDashboard onLogout={handleLogout} /></ProtectedRoute>}
+      />
+      <Route
+        path="/worker"
+        element={<ProtectedRoute user={user} role="citizen" userType="outdoor_worker"><LocationAudienceDashboard worker onLogout={handleLogout} /></ProtectedRoute>}
+      />
+      <Route
+        path="/government"
+        element={<ProtectedRoute user={user} role="government">
           <AppShell
             user={user}
             onLogout={handleLogout}
@@ -1726,8 +1884,9 @@ function App() {
               bundle={bundle}
             />
           </AppShell>
-        }
+        </ProtectedRoute>}
       />
+      <Route path="*" element={<Navigate to={user ? profilePath(user) : '/login'} replace />} />
     </Routes>
   );
 }

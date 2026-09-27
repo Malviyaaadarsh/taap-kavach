@@ -37,6 +37,7 @@ from .services.location_service import (
     get_states,
     get_wards_for_city,
 )
+from .services.location_weather_service import LocationWeatherError, get_location_weather
 from .services.recommendation_service import get_ward_recommendations
 from .services.risk_service import calculate_ward_risk_and_impact
 from .services.thermal_engine import ThermalStressEngine, WeatherInput
@@ -95,6 +96,15 @@ def db() -> sqlite3.Connection:
     connection.execute(
         "CREATE TABLE IF NOT EXISTS users (user_id TEXT PRIMARY KEY, email TEXT UNIQUE NOT NULL, password_hash TEXT NOT NULL, user_type TEXT NOT NULL, organization TEXT NOT NULL)"
     )
+    columns = {row["name"] for row in connection.execute("PRAGMA table_info(users)")}
+    if "role" not in columns:
+        connection.execute("ALTER TABLE users ADD COLUMN role TEXT")
+    if "user_type_selection" not in columns:
+        connection.execute("ALTER TABLE users ADD COLUMN user_type_selection TEXT")
+    connection.execute(
+        "UPDATE users SET role = 'government' WHERE role IS NULL AND user_type IN ('local_administration', 'healthcare_facility')"
+    )
+    connection.commit()
     return connection
 
 
@@ -106,7 +116,7 @@ def init_users() -> None:
     ]
     for user in demos:
         connection.execute(
-            "INSERT OR IGNORE INTO users VALUES (?, ?, ?, ?, ?)",
+            "INSERT OR IGNORE INTO users (user_id, email, password_hash, user_type, organization, role, user_type_selection) VALUES (?, ?, ?, ?, ?, 'government', NULL)",
             (user[0], user[1], password_hash(user[2]), user[3], user[4]),
         )
     connection.commit()
@@ -123,6 +133,8 @@ def token_for(row: sqlite3.Row) -> str:
         "sub": row["user_id"],
         "email": row["email"],
         "user_type": row["user_type"],
+        "role": row["role"],
+        "user_type_selection": row["user_type_selection"],
         "exp": datetime.now(timezone.utc) + timedelta(hours=24),
     }
     return jwt.encode(payload, JWT_SECRET, algorithm=ALGORITHM)
@@ -139,7 +151,7 @@ def current_user(credentials: Annotated[HTTPAuthorizationCredentials | None, Sec
 
 def require_role(role: str):
     def dependency(user: Annotated[dict, Depends(current_user)]) -> dict:
-        if user.get("user_type") != role:
+        if user.get("user_type") != role or (role in {"local_administration", "healthcare_facility"} and user.get("role") != "government"):
             raise HTTPException(status_code=403, detail=f"Requires {role} access")
         return user
 
@@ -152,9 +164,14 @@ class LoginRequest(BaseModel):
 
 
 class RegisterRequest(LoginRequest):
-    user_type: Literal["local_administration", "healthcare_facility"]
-    organization_name: str = Field(min_length=2, max_length=120)
+    user_type: Literal["local_administration", "healthcare_facility"] = "local_administration"
+    organization_name: str = Field(default="Taap Kavach User", min_length=2, max_length=120)
     ward_jurisdiction: list[str] = Field(default_factory=list)
+
+
+class ProfileSelection(BaseModel):
+    role: Literal["government", "citizen"] | None = None
+    user_type: Literal["outdoor_worker", "citizen"] | None = None
 
 
 class WeatherInputPayload(BaseModel):
@@ -268,6 +285,17 @@ def get_cities_list(district_id: str = Query("bhopal")) -> dict:
 def get_wards_list(city_id: str = Query("bhopal_bmc")) -> dict:
     wards = get_wards_for_city(city_id)
     return {"city_id": city_id, "total_wards": len(wards), "wards": wards}
+
+
+@app.get("/api/location/weather", tags=["Location Weather"])
+def location_weather(
+    latitude: float = Query(..., ge=-90, le=90),
+    longitude: float = Query(..., ge=-180, le=180),
+) -> dict:
+    try:
+        return get_location_weather(latitude, longitude)
+    except LocationWeatherError as error:
+        raise HTTPException(status_code=503, detail="Location weather is temporarily unavailable") from error
 
 
 # Backwards compatibility
@@ -583,6 +611,9 @@ def login(request: LoginRequest) -> dict:
         "expires_in": 86400,
         "user_type": row["user_type"],
         "organization": row["organization"],
+        "role": row["role"],
+        "user_type_selection": row["user_type_selection"],
+        "user_id": row["user_id"],
     }
 
 
@@ -592,7 +623,7 @@ def register(request: RegisterRequest) -> dict:
     user_id = f"USER_{secrets.token_hex(4).upper()}"
     try:
         connection.execute(
-            "INSERT INTO users VALUES (?, ?, ?, ?, ?)",
+            "INSERT INTO users (user_id, email, password_hash, user_type, organization, role, user_type_selection) VALUES (?, ?, ?, ?, ?, NULL, NULL)",
             (user_id, request.email, password_hash(request.password), request.user_type, request.organization_name),
         )
         connection.commit()
@@ -607,6 +638,59 @@ def register(request: RegisterRequest) -> dict:
         "expires_in": 86400,
         "user_type": request.user_type,
         "user_id": user_id,
+        "organization": request.organization_name,
+        "role": row["role"],
+        "user_type_selection": row["user_type_selection"],
+    }
+
+
+@app.get("/api/auth/me", tags=["Authentication"])
+def me(user: Annotated[dict, Depends(current_user)]) -> dict:
+    connection = db()
+    row = connection.execute("SELECT * FROM users WHERE user_id = ?", (user["sub"],)).fetchone()
+    connection.close()
+    if row is None:
+        raise HTTPException(status_code=401, detail="User account not found")
+    return {
+        "user_id": row["user_id"],
+        "email": row["email"],
+        "user_type": row["user_type"],
+        "organization": row["organization"],
+        "role": row["role"],
+        "user_type_selection": row["user_type_selection"],
+    }
+
+
+@app.patch("/api/auth/profile", tags=["Authentication"])
+def update_profile(selection: ProfileSelection, user: Annotated[dict, Depends(current_user)]) -> dict:
+    if selection.role == "government" and selection.user_type is not None:
+        raise HTTPException(status_code=400, detail="Government users do not need a user type")
+    if selection.role == "citizen" and selection.user_type is not None and selection.user_type not in {"outdoor_worker", "citizen"}:
+        raise HTTPException(status_code=400, detail="Citizen users must select a user type")
+    if selection.role is None and selection.user_type is None:
+        raise HTTPException(status_code=400, detail="A role or user type is required")
+
+    connection = db()
+    row = connection.execute("SELECT * FROM users WHERE user_id = ?", (user["sub"],)).fetchone()
+    if row is None:
+        connection.close()
+        raise HTTPException(status_code=401, detail="User account not found")
+    role = selection.role if selection.role is not None else row["role"]
+    user_type_selection = selection.user_type if selection.user_type is not None else row["user_type_selection"]
+    connection.execute(
+        "UPDATE users SET role = ?, user_type_selection = ? WHERE user_id = ?",
+        (role, user_type_selection, user["sub"]),
+    )
+    connection.commit()
+    updated = connection.execute("SELECT * FROM users WHERE user_id = ?", (user["sub"],)).fetchone()
+    connection.close()
+    return {
+        "user_id": updated["user_id"],
+        "email": updated["email"],
+        "user_type": updated["user_type"],
+        "organization": updated["organization"],
+        "role": updated["role"],
+        "user_type_selection": updated["user_type_selection"],
     }
 
 
