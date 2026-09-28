@@ -1,24 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
   <title id="title">Taap Kavach mark</title>
-  <desc id="desc">A pixel-grid heat shield with a rising sun, representing local heat protection.</desc>
-  <rect width="64" height="64" fill="#f4efe2"/>
-  <rect x="8" y="8" width="48" height="4" fill="#174f49"/>
-  <rect x="8" y="52" width="48" height="4" fill="#174f49"/>
-  <rect x="8" y="12" width="4" height="40" fill="#174f49"/>
-  <rect x="52" y="12" width="4" height="40" fill="#174f49"/>
-  <rect x="16" y="16" width="32" height="4" fill="#174f49"/>
-  <rect x="12" y="20" width="8" height="4" fill="#174f49"/>
-  <rect x="44" y="20" width="8" height="4" fill="#174f49"/>
-  <rect x="16" y="24" width="32" height="4" fill="#c48728"/>
-  <rect x="20" y="20" width="24" height="4" fill="#c48728"/>
-  <rect x="24" y="16" width="16" height="4" fill="#c48728"/>
-  <rect x="20" y="28" width="24" height="4" fill="#174f49"/>
-  <rect x="16" y="32" width="32" height="4" fill="#174f49"/>
-  <rect x="16" y="36" width="8" height="4" fill="#174f49"/>
-  <rect x="40" y="36" width="8" height="4" fill="#174f49"/>
-  <rect x="20" y="40" width="24" height="4" fill="#174f49"/>
-  <rect x="24" y="44" width="16" height="4" fill="#174f49"/>
-  <rect x="28" y="48" width="8" height="4" fill="#174f49"/>
-  <rect x="24" y="32" width="4" height="4" fill="#f4efe2"/>
-  <rect x="36" y="32" width="4" height="4" fill="#f4efe2"/>
+  <desc id="desc">An original circular shield emblem with a sun and protective water line.</desc>
+  <circle cx="32" cy="32" r="30" fill="#fff" stroke="#123b5d" stroke-width="3"/>
+  <path d="M32 7a25 25 0 0 1 21 39H11A25 25 0 0 1 32 7Z" fill="#f28c28" opacity=".14"/>
+  <circle cx="32" cy="25" r="9" fill="#f28c28"/>
+  <path d="M32 11v5M32 34v5M18 25h5M41 25h5M22 15l4 4M38 31l4 4M42 15l-4 4M26 31l-4 4" stroke="#123b5d" stroke-width="2" stroke-linecap="round"/>
+  <path d="M14 39c5-4 9 4 14 0s9 4 14 0 7 1 8 2" fill="none" stroke="#13805c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 46c5-3 9 3 14 0s9 3 14 0 7 1 7 1" fill="none" stroke="#13805c" stroke-width="2" stroke-linecap="round" opacity=".85"/>
 </svg>

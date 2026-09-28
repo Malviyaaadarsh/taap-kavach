@@ -71,7 +71,6 @@ function AppShell({
           </Link>
           <span className="tier-badge">4th Tier: Ward/Zone</span>
         </div>
-
         <nav className="nav-tabs">
           <button className={`nav-tab ${activeTab === 'overview' ? 'active' : ''}`} onClick={() => onTabChange('overview')}>Overview</button>
           <button className={`nav-tab ${activeTab === 'map' ? 'active' : ''}`} onClick={() => onTabChange('map')}>Heat Map</button>

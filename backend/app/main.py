@@ -37,7 +37,7 @@ from .services.location_service import (
     get_states,
     get_wards_for_city,
 )
-from .services.location_weather_service import LocationWeatherError, get_location_weather
+from .services.location_weather_service import LocationWeatherError, get_location_weather, search_locations
 from .services.recommendation_service import get_ward_recommendations
 from .services.risk_service import calculate_ward_risk_and_impact
 from .services.thermal_engine import ThermalStressEngine, WeatherInput
@@ -296,6 +296,14 @@ def location_weather(
         return get_location_weather(latitude, longitude)
     except LocationWeatherError as error:
         raise HTTPException(status_code=503, detail="Location weather is temporarily unavailable") from error
+
+
+@app.get("/api/location/search", tags=["Location Weather"])
+def location_search(q: str = Query(..., min_length=2, max_length=80)) -> dict:
+    try:
+        return {"locations": search_locations(q)}
+    except LocationWeatherError as error:
+        raise HTTPException(status_code=503, detail="Location search is temporarily unavailable") from error
 
 
 # Backwards compatibility

@@ -18,8 +18,12 @@ const writeStorage = (key, value) => {
   }
 };
 
+const apiBaseUrl = (import.meta.env.VITE_API_URL || 'http://localhost:8000/api')
+  .trim()
+  .replace(/\/$/, '');
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api',
+  baseURL: apiBaseUrl,
 });
 
 api.interceptors.request.use((config) => {
@@ -70,6 +74,8 @@ export const getWardBundle = (id) =>
 
 export const getLocationWeather = (latitude, longitude) =>
   api.get(`/location/weather?latitude=${encodeURIComponent(latitude)}&longitude=${encodeURIComponent(longitude)}`).then((r) => r.data);
+export const searchLocations = (query) =>
+  api.get(`/location/search?q=${encodeURIComponent(query)}`).then((r) => r.data.locations || []);
 
 // Administration & Healthcare Workspaces
 export const getAdminOverview = () => api.get('/admin/overview').then((r) => r.data);
