@@ -1,6 +1,6 @@
 # Taap Kavach
 
-Taap Kavach is a locally runnable Bhopal heat intelligence prototype. It translates a supplied five-day Bhopal environmental snapshot and ward-level interpolation into WBGT, UTCI, Heat Index, alert levels, five-day forecasts, and preparedness recommendations for citizens, municipal teams, and healthcare facilities.
+Taap Kavach is a locally runnable heat intelligence prototype. It translates a supplied five-day Bhopal(initially) environmental snapshot and ward-level interpolation into WBGT, UTCI, Heat Index, alert levels, five-day forecasts, and preparedness recommendations for citizens, municipal teams, and healthcare facilities.
 
 > **Prototype disclaimer:** the current snapshot is supplied MET Norway city data with ward-level interpolation and medium confidence. Forecasts are demonstration outputs, recommendations are informational, and this is neither an official IMD alerting system nor a medical diagnosis tool.
 
